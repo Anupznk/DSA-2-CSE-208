@@ -1,0 +1,11 @@
+1. Adding a new vertex, s, to the graph and connecting it to all other vertices with a 0 edge weight
+
+2. Reweighting the edges:
+	reweighting so that all edges become non-negative
+	if all edges in a graph are non-negative, performing Dijkstra's algorithm on every vertex is the fastest way to solve the all-pairs shortest-path problem
+This step uses Bellman-Ford to help reweight the edges
+3. Finally, Dijkstra's algorithm is run on all vertices to find the shortest path.
+4. to transform these path weights back into the original path weights so that an accurate path weight is returned at the end of the algorithm. This is done at the end of the algorithm by simply reversing the reweighting process. 
+
+
+O(V^2 log(V)+VE) (good for sparse graph)

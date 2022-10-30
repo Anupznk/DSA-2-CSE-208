@@ -1,0 +1,2 @@
+The problem is similar to the Dijkstra’s problem..
+The idea is to use Dijkstra’s algorithm. In order to find the shortest distance from all vertex to a given destination vertex we reverse all the edges of the directed graph and use the destination vertex as the source vertex in dijkstra’s algorithm. Since all the edges are now reversed computing the shortest distance from the destination vertex to all the other vertex is similar to computing shortest distance from all vertex to a given destination vertex.
